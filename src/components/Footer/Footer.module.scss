@@ -1,0 +1,214 @@
+.footer {
+  width: 100%;
+  background: #ffffff;
+  padding: 80px 0 40px;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 160px;
+}
+
+.topSection {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 64px;
+}
+
+.brandSection {
+  width: 300px;
+}
+
+.logo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: #141718;
+  margin-bottom: 16px;
+}
+
+.description {
+  color: #6c7275;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 24px;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #f3f5f7;
+  transition: background-color 0.2s;
+}
+
+.socialLink:hover {
+  background: #e8ecef;
+}
+
+.linksSection {
+  display: flex;
+  gap: 80px;
+}
+
+.linkColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.linkTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: #141718;
+  margin: 0 0 8px;
+  text-transform: uppercase;
+}
+
+.linkList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.linkList li a {
+  color: #6c7275;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.linkList li a:hover {
+  color: #141718;
+}
+
+.newsletterForm {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 300px;
+}
+
+.newsletterInput {
+  height: 48px;
+  border: 1px solid #d9dcde;
+  border-radius: 4px;
+  padding: 0 16px;
+  font-size: 14px;
+  width: 100%;
+  background: #ffffff;
+}
+
+.newsletterInput:focus {
+  outline: none;
+  border-color: #141718;
+}
+
+.subscribeButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  height: 48px;
+  background: #141718;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.subscribeButton:hover {
+  background: #232627;
+}
+
+.divider {
+  height: 1px;
+  background: #e8ecef;
+  margin-bottom: 24px;
+}
+
+.bottomSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  color: #6c7275;
+  font-size: 14px;
+}
+
+.paymentMethods {
+  display: flex;
+  gap: 16px;
+}
+
+.paymentIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .topSection {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .brandSection {
+    width: 100%;
+  }
+
+  .linksSection {
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .newsletterForm {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .linksSection {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .bottomSection {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .paymentMethods {
+    margin-top: 16px;
+  }
+}

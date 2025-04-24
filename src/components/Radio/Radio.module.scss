@@ -1,0 +1,37 @@
+.radioLabel {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 0.5rem;
+}
+.radio {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--color-border);
+  border-radius: 50%;
+  background: var(--color-surface);
+  transition: border-color 0.2s, background 0.2s;
+  position: relative;
+}
+.radio:checked {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+}
+.checkmark {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: none;
+}
+.radio:checked + .checkmark {
+  display: block;
+  background: var(--color-primary);
+}
+.labelText {
+  font-size: 1rem;
+  color: var(--color-text);
+}

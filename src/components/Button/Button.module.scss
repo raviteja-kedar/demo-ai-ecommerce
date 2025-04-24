@@ -1,0 +1,168 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 8px; // Figma: 8px
+  font-family: 'Poppins', sans-serif; // Figma: Poppins
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+  letter-spacing: 0.01em;
+  box-shadow: 0 1px 2px rgba(20, 23, 24, 0.04);
+  user-select: none;
+}
+
+// Sizes
+.sm {
+  height: 36px;
+  font-size: 0.875rem;
+  padding: 0 20px;
+}
+.md {
+  height: 48px;
+  font-size: 1rem;
+  padding: 0 32px;
+}
+.lg {
+  height: 56px;
+  font-size: 1.125rem;
+  padding: 0 40px;
+}
+
+
+.primary {
+  background: #141718; // Figma: Primary
+  color: #fff;
+  border: none;
+}
+.primary:hover,
+.primary:focus {
+  background: #23262F; // Figma: Primary hover
+  color: #fff;
+}
+
+
+.secondary {
+  background: #F3F5F7; // Figma: Secondary
+  color: #141718;
+  border: 1.5px solid #141718;
+}
+.secondary:hover,
+.secondary:focus {
+  background: #E4E7EC; // Figma: Secondary hover
+  color: #141718;
+}
+
+
+.outline {
+  background: transparent;
+  color: #141718;
+  border: 1.5px solid #141718;
+}
+.outline:hover,
+.outline:focus {
+  background: #F3F5F7;
+  color: #141718;
+}
+.outline:focus {
+  background: #F3F5F7;
+}
+
+.danger {
+  background: #FF5630; // Figma: Red
+  color: #fff;
+  border: none;
+}
+.danger:hover,
+.danger:focus {
+  background: #D42B0A; // Figma: Red hover
+}
+
+
+.sm {
+  height: 36px;
+  font-size: 14px;
+  padding: 0 20px;
+}
+.md {
+  height: 48px;
+  font-size: 16px;
+  padding: 0 32px;
+}
+.lg {
+  height: 56px;
+  font-size: 18px;
+  padding: 0 40px;
+}
+
+.button:disabled,
+.button[aria-disabled='true'] {
+  opacity: 0.5;
+  pointer-events: none;
+  background: #E4E7EC;
+  color: #B1B5C3;
+  border: none;
+}
+
+.primary {
+  background: var(--color-primary);
+  color: var(--neutral-01);
+  box-shadow: 0 1px 2px rgba(20, 23, 24, 0.04);
+}
+.primary:hover,
+.primary:focus {
+  background: var(--color-secondary);
+  color: var(--color-primary);
+}
+.secondary {
+  background: var(--color-secondary);
+  color: var(--color-primary);
+  border: 1.5px solid var(--color-primary);
+}
+.secondary:hover,
+.secondary:focus {
+  background: var(--color-primary);
+  color: var(--neutral-01);
+}
+.outline {
+  background: transparent;
+  color: var(--color-primary);
+  border: 1.5px solid var(--color-primary);
+}
+.outline:hover,
+.outline:focus {
+  background: var(--color-primary);
+  color: var(--neutral-01);
+}
+.danger {
+  background: var(--color-red);
+  color: var(--neutral-01);
+}
+.danger:hover,
+.danger:focus {
+  background: #d42b0a;
+}
+.sm {
+  height: 36px;
+  font-size: 0.875rem;
+  padding: 0 var(--spacing-md);
+}
+.md {
+  height: 48px;
+  font-size: 1rem;
+  padding: 0 var(--spacing-lg);
+}
+.lg {
+  height: 56px;
+  font-size: 1.125rem;
+  padding: 0 var(--spacing-xl);
+}
+.button:disabled,
+.button[aria-disabled='true'] {
+  opacity: 0.5;
+  pointer-events: none;
+  background: var(--neutral-03);
+  color: var(--color-text-secondary);
+}

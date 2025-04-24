@@ -1,0 +1,80 @@
+.notificationBar {
+  width: 100%;
+  background: #f3f5f7;
+  padding: 12px 160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 0 auto;
+}
+
+.textIcon {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.text {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #343839;
+  line-height: 1.57;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: none;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #377dff;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  transition: opacity 0.2s;
+}
+
+.closeButton:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 1280px) {
+  .notificationBar {
+    padding: 12px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .notificationBar {
+    padding: 12px 20px;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

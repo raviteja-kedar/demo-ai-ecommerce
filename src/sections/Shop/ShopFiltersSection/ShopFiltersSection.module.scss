@@ -1,0 +1,133 @@
+.filters {
+  width: 262px;
+  padding: 0;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.filterHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.filterIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filterTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #121212;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #121212;
+  margin: 0;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.categoryItem {
+  margin: 0;
+  padding: 0;
+}
+
+.categoryBtn {
+  background: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #6c7275;
+  cursor: pointer;
+  padding: 0;
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5714;
+}
+
+.categoryBtn.active {
+  color: #141718;
+  border-bottom: 1px solid #121212;
+}
+
+.categoryBtn:hover {
+  color: #141718;
+}
+
+.priceOptions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.priceItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.priceLabel {
+  font-size: 14px;
+  color: #6c7275;
+  font-weight: 600;
+  line-height: 1.5714;
+}
+
+.selected .priceLabel {
+  color: #6c7275;
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  border: 1.5px solid #6c7275;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fcfcfd;
+}
+
+.checkbox.checked {
+  background: #141718;
+  border-color: #141718;
+}
+
+.checkboxInner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .filters {
+    width: 100%;
+  }
+}

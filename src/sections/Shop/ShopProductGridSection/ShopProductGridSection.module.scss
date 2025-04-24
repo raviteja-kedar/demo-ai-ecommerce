@@ -1,0 +1,131 @@
+.gridSection {
+  width: 100%;
+  padding: 0;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.toolbarSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.categoryTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+}
+
+.toolbarControls {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.sortDropdown {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid #121212;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.sortText {
+  font-size: 16px;
+  color: #121212;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+
+.viewControls {
+  display: flex;
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+}
+
+.viewControl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+  border-left: 1px solid #eaeaea;
+}
+
+.viewControl:first-child {
+  border-left: none;
+}
+
+.viewControl.active {
+  background: #f3f5f7;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  background: none;
+}
+
+.showMoreContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.showMoreButton {
+  font-size: 16px;
+  font-weight: 500;
+  color: #141718;
+  background: none;
+  border: 1px solid #141718;
+  border-radius: 80px;
+  padding: 6px 40px;
+  cursor: pointer;
+  line-height: 1.75;
+  letter-spacing: -0.025em;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.showMoreButton:hover {
+  background: #141718;
+  color: #ffffff;
+}
+
+@media (max-width: 1100px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .toolbarSection {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .toolbarControls {
+    width: 100%;
+    justify-content: space-between;
+  }
+}

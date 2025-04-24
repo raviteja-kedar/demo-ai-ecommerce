@@ -1,0 +1,35 @@
+.switchLabel {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 0.5rem;
+}
+.switch {
+  appearance: none;
+  width: 40px;
+  height: 24px;
+  background: var(--color-border);
+  border-radius: 12px;
+  position: relative;
+  transition: background 0.2s;
+}
+.switch:checked {
+  background: var(--color-primary);
+}
+.slider {
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--color-surface);
+  transition: left 0.2s;
+}
+.switch:checked + .slider {
+  left: 18px;
+}
+.labelText {
+  font-size: 1rem;
+  color: var(--color-text);
+}

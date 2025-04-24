@@ -1,0 +1,89 @@
+// Shop page styling based on Figma design
+.shopPageContainer {
+  color: #141718;
+  font-family: 'Inter', 'Poppins', 'Helvetica Neue', Arial, sans-serif;
+  min-height: 100vh;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.headerSection {
+  width: 100%;
+  background: #fff;
+  padding: 60px 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  margin-bottom: 2rem;
+}
+
+.breadcrumbs {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.homeLink {
+  color: #666;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.activeLink {
+  color: #000;
+  font-weight: 500;
+}
+
+.pageTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.pageSubtitle {
+  font-size: 1.125rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contentRow {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1280px) {
+  .headerSection,
+  .contentRow {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.productGrid {
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--color-border);
+}
+
+// Add more classes as needed for your PLP layout
